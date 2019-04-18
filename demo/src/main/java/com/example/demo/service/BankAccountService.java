@@ -28,6 +28,5 @@ public class BankAccountService {
 ;        }
     }
 
-    // Service , repository si controller pentru Card
-    // metide -POST , GET - addCard , getCards
+
 }

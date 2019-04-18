@@ -4,7 +4,7 @@ public class Card {
 
 
     private String name;
-    private int balance;
+    private double balance;
 
     @Override
     public String toString() {
@@ -22,11 +22,11 @@ public class Card {
         this.name = name;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 }

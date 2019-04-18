@@ -12,7 +12,6 @@ public class BankAccountRepository {
 
     List<BankAccount> bankAccounts = new ArrayList<>();
 
-
     public void addBankAccount(BankAccount bankAccount) {
         bankAccounts.add(bankAccount);
     }

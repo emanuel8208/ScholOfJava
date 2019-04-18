@@ -12,7 +12,7 @@ public class MainController {
    // @RequestMapping(path = "/myresource/{name}", method = RequestMethod.GET)
     @GetMapping(path = "/myresource/{name}")
     public ResponseEntity<String> firstGet(@PathVariable String name) {
-        String value = "Welcome " + name + "! This is my first web service 3";
+        String value = "Welcome " + name + "! This is my first web service";
         ResponseEntity<String> responseEntity = new ResponseEntity<>(value, HttpStatus.OK);
         return responseEntity;
     }
@@ -20,8 +20,6 @@ public class MainController {
     @PostMapping(path = "/mypost")
     public ResponseEntity<BankAccount> myPost (@RequestBody BankAccount bankAccount) {
         bankAccount.setBalance(bankAccount.getBalance() + 50);
-        ResponseEntity<BankAccount> response = new ResponseEntity<> (bankAccount, HttpStatus.OK);
-
-        return response;
+        return new ResponseEntity<> (bankAccount, HttpStatus.OK);
     }
 }

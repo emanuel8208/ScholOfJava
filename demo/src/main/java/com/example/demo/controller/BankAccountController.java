@@ -22,7 +22,6 @@ public class BankAccountController {
     @PostMapping(path = "/add/account")
     public void addBankAccount(@RequestBody BankAccount bankAccount, HttpServletResponse response) {
         bankAccountService.addBankAccount(bankAccount, response);
-
     }
 
 }
